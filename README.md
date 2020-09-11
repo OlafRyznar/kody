@@ -1,2 +1,2 @@
 # kody
-nauka programowania
+nauka programowania C++ i python
