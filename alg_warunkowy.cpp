@@ -1,5 +1,5 @@
 /*
- * czy_parzysta.cpp
+ * alg_warunkowy.cpp
  * 
  * Copyright 2020  <>
  * 
@@ -26,32 +26,31 @@
 
 using namespace std;
 
-
 int main(int argc, char **argv)
 {
+	
 	int a;
-	int b;
-	int c;
-	a = 0;
-	b = 0;
-	c = 0;
+	a=0;
+	cout << "Podaj liczbę punktów: ";
+	cin >> a;
+	
+	if (a<0 or a>60) { 
+		cout << "błędne dane";
+		return 0;
+	}
+		
+	if (a<20) {
+	 cout << "podstawowy";
+	}
+	else if (a<=40) {
+	 cout << "sredniozaawansowany";
+	}
+	else cout << "zaawansowany";
 	
 	
-	cout <<"wpisz 1 liczbe: ";
-	cin>> a;
 	
-	cout <<"wpisz 2 liczbe: ";
-	cin>> b;
-	
-	cout <<"wpisz 3 liczbe: ";
-	cin>> c;
-	
-	if (a>b && a>c) cout<< "Największa: " << a;
-	if (b>c && b>a) cout<< "Największa: " << b;
-	if (c>a && c>b) cout<< "Największa: " << c;
-	
-
-
 	return 0;
 }
+
+
 
