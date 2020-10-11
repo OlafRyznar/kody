@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  petle_cw2.py
+#  petle_cw6.py
 #  
 #  Copyright 2020 olaf5 <olaf5@DESKTOP-T1JQ8NP>
 #  
@@ -24,22 +24,18 @@
 
 
 def main(args):
-   
-    n = int(input("podaj początek przedziału: "))
-    m = int(input("podaj koniec przedziału: "))
+	l
+	
+	while liczba > 0:
+		if liczba == 0:
+		suma = suma + liczba
     
+			print(suma)
     
-    for liczba in range(n, m + 1):
-		
-        if liczba >= 1: {
-        
-            print(liczba)
-    }
-    
-    
-    return 0
-    
-    
+	return 0
+
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
+
+    

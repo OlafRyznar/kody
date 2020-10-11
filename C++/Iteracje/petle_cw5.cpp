@@ -1,7 +1,7 @@
 /*
- * petle_cw1.cpp
+ * petle_cw5.cpp
  *
- * Copyright 2020  <>
+ * Copyright 2020 olaf5 <olaf5@DESKTOP-T1JQ8NP>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,30 +23,30 @@
 
 
 #include <iostream>
+
+
 using namespace std;
 
 int main(int argc, char **argv)
 {
-	int a;
-	int suma;
-	int b;
-	a=0;
-	suma=0;
 
-	cout << "podaj liczbe: ";
-	cin >> a;
+    int a;
+    int b;
 
-	suma = suma+a;
+    cout <<"Podaj ilosc ocen: ";
+    cin >>a;
 
-		while(suma<= 75){
-			cout << "podaj liczbe: ";
-			cin >> a;
-			suma = suma + a;
-		}
-		if (suma>=75){
-		cout << suma;
-	}
+    float suma = 0;
+    for (int i = 0; i < a; ++i)
+    {
+        cout <<"Podaj ocene: " ;
+        cin >>b;
+        suma += b;
+    }
+    cout <<"Srednia ocen wynosi: "<<(suma / a)<<endl;
+
+
+
 
 	return 0;
 }
-

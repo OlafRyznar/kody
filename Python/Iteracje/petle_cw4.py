@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #
-#  petle_cw2.py
+#  petle_cw4.py
 #  
 #  Copyright 2020 olaf5 <olaf5@DESKTOP-T1JQ8NP>
 #  
@@ -24,22 +24,27 @@
 
 
 def main(args):
-   
-    n = int(input("podaj początek przedziału: "))
-    m = int(input("podaj koniec przedziału: "))
-    
-    
-    for liczba in range(n, m + 1):
+	
+	m=int(input("podaj liczbę początkową: "))
+	n=int(input("podaj liczbę końcową: "))
+	
+	liczba = 0
+	
+	
+	for liczba in range(m, n):
 		
-        if liczba >= 1: {
-        
-            print(liczba)
-    }
-    
-    
-    return 0
-    
-    
+		if liczba >= 10 and liczba <=100:
+			
+			if liczba % 2 == 0:  
+				
+				if liczba % 3 == 0:  
+					
+					print(liczba)
+
+
+	return 0
+	
+
 if __name__ == '__main__':
     import sys
     sys.exit(main(sys.argv))
