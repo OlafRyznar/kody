@@ -3,7 +3,7 @@
 #
 #  funkcje01.py
 
-def sumuj(a, b):
+def sumuj(a, b):   #defincja funkcji z parametrami
     suma = a+b
     print ("suma: ",suma)
 
