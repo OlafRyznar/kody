@@ -3,7 +3,7 @@
 #
 #  alg_warunkowy.py
 #  
-#  Copyright 2020 olaf5 <olaf5@DESKTOP-T1JQ8NP>
+#  Copyright 2020  <>
 #  
 #  This program is free software; you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
@@ -24,7 +24,23 @@
 
 
 def main(args):
-    return 0
+	
+	a = int(input("Podaj wynik: "))
+	if (a>60 or a<0):
+			print ("Bledne dane")
+	elif (a<20):
+			print ("Podstawowy")
+	elif (a <= 20 or a<=40):
+			print ("Sredniozaawansowany")
+	elif (a >=60):
+			print ("Zaawansowany")
+	
+	
+		
+
+	
+	
+	return 0
 
 if __name__ == '__main__':
     import sys
